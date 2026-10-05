@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.counter {
+  background-color: gold;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.counter__button {
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+}
+.counter__count {
+  font-size: 20px;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+
+.password__input {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid purple;
+}
+
+input:focus {
+  outline: none;
+}
+
+.password__btn {
+  background-color: transparent;
+  text-decoration: underline;
+}
+.password__btn:hover {
+  text-decoration: none;
+}
+
+.modalBtn {
+  padding: 20px;
+  background-color: orange;
+
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  align-items: center;
+  justify-content: center;
+}
+.modal.opened {
+  display: flex;
+}
+.modal__content {
+  padding: 20px;
+  background-color: deepskyblue;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 30px;
+}
+
+.modal__close {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+}
