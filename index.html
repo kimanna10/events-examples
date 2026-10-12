@@ -162,5 +162,55 @@
       <input type="submit" value="Зарегистироваться" id="registrationBtn" />
       <input type="reset" value="Очистить" id="resetBtn" />
     </form>
+
+    <form class="auth-form" id="authForm">
+      <h2 class="auth-form__title">Авторизация</h2>
+
+      <!-- EMAIL -->
+      <div class="auth-form__field form-field">
+        <label for="emailAuth" class="form-field__label"
+          >Email пользователя</label
+        >
+        <input
+          type="email"
+          name="emailAuth"
+          id="emailAuth"
+          class="form-field__input"
+          placeholder="Введите email"
+        />
+      </div>
+
+      <!-- PASSWORD 1-->
+      <div class="auth-form__field form-field">
+        <label for="passAuth" class="form-field__label"
+          >Пароль пользователя</label
+        >
+        <input
+          type="password"
+          name="passAuth"
+          id="passAuth"
+          class="form-field__input"
+          placeholder="Введите пароль"
+        />
+        <small class="auth-form__toggle" id="togglePasswordAuth"
+          >Показать пароль</small
+        >
+      </div>
+      <small class="error" id="authError"></small>
+
+      <input type="submit" value="Авторизоваться" id="authBtn" />
+    </form>
+
+    <div class="search">
+      <h2 class="search__title">Каталог товаров</h2>
+      <input
+        type="text"
+        id="searchInput"
+        class="search__input"
+        placeholder="Поиск по названию или описанию..."
+      />
+
+      <div id="products" class="products-block"></div>
+    </div>
   </body>
 </html>

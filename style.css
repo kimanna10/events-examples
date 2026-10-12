@@ -98,3 +98,41 @@ input:focus {
   width: 20px;
   border-radius: 5px;
 }
+
+.error {
+  color: red;
+  display: none;
+}
+.error-visible {
+  display: flex;
+}
+
+.auth-form__toggle {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-form__toggle:hover {
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search__input {
+  padding: 10px 20px;
+  width: 300px;
+}
+
+.products-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.no-res {
+  font-style: italic;
+}
